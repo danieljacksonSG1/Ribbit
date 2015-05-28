@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/AuthBackground"
+                tools:context="au.com.wsit.ribbit.ui.LoginActivity" >
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:src="@drawable/background"
+        style="@style/AuthBackgroundImage"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/app_name"
+        style="@style/AuthTitle"/>
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:text="@string/subTitle"
+        style="@style/AuthSubTitle"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/editTextlayout"
+        style="@style/AuthFieldContainer">
+
+        <EditText
+            android:id="@+id/userNameField"
+            android:hint="@string/username_hint"
+            style="@style/AuthEditText">
+            <requestFocus/>
+            </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordField"
+            android:hint="@string/password_hint"
+            android:textColorHint="@color/light_gray"
+            android:textSize="17sp"
+            />
+
+        </LinearLayout>
+
+
+
+
+    <Button
+
+        android:text="@string/login_button"
+        android:id="@+id/loginButton"
+        style="@style/AuthButton"
+    android:layout_alignLeft="@+id/backgroundImage"
+    android:layout_below="@+id/editTextlayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_text"
+        android:id="@+id/signUpText"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="12dp"/>
+
+
+
+
+</RelativeLayout>
